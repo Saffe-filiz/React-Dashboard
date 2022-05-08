@@ -7,10 +7,12 @@ function search () {
 			    <span className="searchIcon">O</span>
 				<input type="text" placeholder="search"/>
 			</div>
-			<div className="userCart">
+			<div className="userContent">
 				<span className="userCartNotificationsIcons">O</span>
-				<span className="userCartUserName">Matt Appleyard</span>
-				<span className="userCartUserImage"></span>
+				<div className="userCart">
+					<span className="userCartUserName">Matt Appleyard</span>
+				    <span className="userCartUserImage"></span>
+				</div>
 			</div>
 		</div>
 	);
