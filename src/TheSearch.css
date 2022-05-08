@@ -34,8 +34,42 @@
 	background-color: transparent;
 }
 
+/* USER CART START */
+
 .search .userCart {
+	display: inline-flex;
+	justify-content: space-between;
 	width: 228px;
 	height: 40px;
-	background-color: black;
+}
+
+.userCart .userCartNotificationsIcons {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.userCartNotificationsIcons:after {
+	position: absolute;
+	top: 0%;
+	left: 22px;
+	content: '';
+	width: 1px;
+	height: 100%;
+	background-color: #ECECEC;
+
+}
+
+.userCart .userCartUserName {
+	display: flex;
+	align-items: center;
+}
+
+
+/* USER CART END */
+
+.userCart .userCartUserImage {
+	width: 40px;
+	height: 40px;
+	background-color:red;
 }
