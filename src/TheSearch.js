@@ -1,4 +1,5 @@
 import './TheSearch.css'
+import userAvatar from './images/userAvatar.png'
 
 function search () {
 	return (
@@ -11,7 +12,9 @@ function search () {
 				<span className="userCartNotificationsIcons">O</span>
 				<div className="userCart">
 					<span className="userCartUserName">Matt Appleyard</span>
-				    <span className="userCartUserImage"></span>
+				    <span className="userCartUserImage">
+				    	<img src={userAvatar}/>
+				    </span>
 				</div>
 			</div>
 		</div>
