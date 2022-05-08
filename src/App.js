@@ -1,10 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import TheNavigation from './TheNavigation'
+import TheSearch from './TheSearch'
 
 function App() {
   return (
     <div className="app">
-    <h1>Test</h1>
+    <TheNavigation/>
+    <TheSearch/>
     </div>
   );
 }
