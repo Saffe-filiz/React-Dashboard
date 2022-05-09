@@ -1,7 +1,6 @@
-import './TheNavigation.css'
-import logo from './images/logo.png'
+import logo from '../Assets/Images/logo.png'
 
-function navigation () {
+function Navigation () {
 	return (
 	<div className="navigation">
 		<div className="logo">
@@ -18,12 +17,12 @@ function navigation () {
 			</ul>
 			<div className="support">
 				<h3>Support</h3>
-				<p>Chat</p>
-				<p>FAQ</p>
+				<a href="">Chat</a>
+				<a href="">FAQ</a>
 			</div>
 		</nav>
 	</div>
 	)
 }
 
-export default navigation
+export default Navigation
