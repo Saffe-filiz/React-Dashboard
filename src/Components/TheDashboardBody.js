@@ -1,10 +1,15 @@
 import TheHeader from './TheHeader'
+import HeaderChart from './TheHeaderBarChart'
+
 
 
 function Dashboard () {
 	return (
 		<div className="dashboardContainer">
-		    <TheHeader/>
+		    <div className="dashboardHeader">
+		    	<TheHeader/>
+		    	<HeaderChart/>
+		    </div>
 		</div>
 	)
 }

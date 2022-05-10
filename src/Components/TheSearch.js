@@ -10,7 +10,7 @@ function Search () {
 			    <span className="searchIcon">
 			    	<img src={SearchIcon}/>
 			    </span>
-				<input type="text" placeholder="search"/>
+				<input type="search" placeholder="search"/>
 			</div>
 			<div className="userContent">
 				<span className="userCartNotificationsIcons">
