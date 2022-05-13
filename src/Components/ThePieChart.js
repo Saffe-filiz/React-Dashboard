@@ -1,7 +1,8 @@
 function PieChart () {
 	return (
-		<div className="pieChart">
-			
+		<div className="pieChartContent">
+			<h2>Test</h2>
+			<div className="pieChart"></div>
 		</div>
 	)
 }

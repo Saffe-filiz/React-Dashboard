@@ -1,9 +1,9 @@
 
 function LineChart () {
 	return (
-		<div className="lineChart">
-			<div className="dataBoxCharTitle"></div>
-			<div className="dataBoxChar"></div>
+		<div className="lineChartContent">
+			<div className="lineChartInfo">TEdddST</div>
+			<div className="ineChart"></div>
 		</div>
 	)
 }

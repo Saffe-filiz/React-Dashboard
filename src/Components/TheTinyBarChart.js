@@ -1,9 +1,9 @@
 
 function TinyBarChart () {
 	return (
-		<div className="tinyBarChart">
-			<h1>Bar Chart</h1>
-			<div className="barChartContent"></div>
+		<div className="tinyBarChartContent">
+			<h2>Bar Chart</h2>
+			<div className="tinyBarChart"></div>
 		</div>
 	)
 }

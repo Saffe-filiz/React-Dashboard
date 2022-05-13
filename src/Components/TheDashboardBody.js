@@ -2,6 +2,7 @@ import TheHeader from './TheHeader';
 import TheTinyBarChart from './TheTinyBarChart';
 import LineChart from './LineChart';
 import TheBarChart from './TheBarChart';
+import ThePieChart from './ThePieChart';
 
 
 
@@ -19,6 +20,7 @@ function Dashboard () {
 		    </section>
 		    <section className="dashboardThirdDataBox">
 		    	<TheBarChart/>
+		    	<ThePieChart/>
 		    </section>
 		</div>
 	)
