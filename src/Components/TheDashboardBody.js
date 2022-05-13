@@ -1,5 +1,5 @@
 import TheHeader from './TheHeader';
-import HeaderChart from './TheHeaderBarChart';
+import TheFirstDataBox from './TheFirstDataBox';
 import DataBox from './DataBox';
 
 
@@ -9,12 +9,15 @@ function Dashboard () {
 		<div className="dashboardContainer">
 		    <section className="dashboardHeader">
 		    	<TheHeader/>
-		    	<HeaderChart/>
+		    	<TheFirstDataBox/>
 		    </section>
-		    <section className="dashboardDataBox">
+		    <section className="dashboardSecondDataBox">
 		    	<DataBox/>
 		    	<DataBox/>
 		    	<DataBox/>
+		    </section>
+		    <section className="dashboardThirdDataBox">
+		    	
 		    </section>
 		</div>
 	)

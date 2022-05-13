@@ -1,7 +1,7 @@
 
 function HeaderBarChart () {
 	return (
-		<div className="headerBarChart">
+		<div className="firstDataBox">
 			<h1>Bar Chart</h1>
 			<div className="barChartContent"></div>
 		</div>

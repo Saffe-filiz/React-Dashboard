@@ -13,6 +13,10 @@
   list-style: none;
 }
 
+body {
+  background-color: #E5E5E5;
+}
+
 :root {
   --mainBorderRadius: 8px;
   --mainFontFamily: 'Mulish', sans-serif;
@@ -20,29 +24,27 @@
 
 .app {
   position: relative;
-  display: inline-flex;
   max-width: 1440px;
   width: 100%;
-  min-height: 100vh;
-  height: auto;
-  background-color: #E5E5E5;
 }
 
 /* NAVIGATION START */
 
-.navigation {
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  min-height: 100vh;
+.app .container {
+  width: 100%;
   height: auto;
+} 
+
+.navigation {
+  width: 200px;
+  height: 827px;
   background-color: #ffffff;
 
 }
 
 .navigation nav {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 nav ul li {
@@ -68,14 +70,26 @@ nav .support a {
   padding: 0 0 20px 60px;
 }
 
+
+/* NAVIGATION END */
+
+/* SEARCH START */
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+} 
+
 /* LOGO START */
 
-.navigation .logo {
+.search .logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px;
-  height: 70px;
+  width: 238px;
+  height: 100%;
   background-color: #ECECEC;
 }
 
@@ -95,21 +109,18 @@ nav .support a {
 
 /* LOGO END */
 
-/* NAVIGATION END */
-
-/* SEARCH START */
-
-.search {
-  display: inline-flex;
+.search .searchArea {
+  display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 72px; 
-  padding: 0 48px 0 48px;
-  background-color: #FFFFFF;
+  height: 100%; 
+  padding: 0 45px 0 45px;
+  background-color: #ffffff
 }
 
-.search .searchInput {
+
+.searchArea .searchInput {
   display: flex;
   align-items: center;
   width: 225px;
@@ -120,7 +131,7 @@ nav .support a {
   background-color: #ECECEC;
 }
 
-.search .searchIcon {
+.searchArea .searchIcon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,7 +148,7 @@ nav .support a {
 
 /* USER CART START */
 
-.search .userContent {
+.searchArea .userContent {
   display: inline-flex;
   justify-content: space-between;
   width: 228px;
@@ -185,20 +196,20 @@ nav .support a {
   height: auto;
   right: 0%;
   top: 70px;
-  padding: 30px 0 0 30px;
+  padding: 24px 0 0 24px;
 }
 
 .dashboardHeader {
   display: inline-flex;
   align-items: center;
-  gap: 15px;
+  gap: 25px;
   width: 100%;
   height: 225px;
 }
 
 .dashboardHeader .containerHero {
   display: inline-flex;
-  width: 700px;
+  width: 670px;
   height: 194px;
   padding: 12px;
   border-radius: var(--mainBorderRadius);
@@ -206,7 +217,7 @@ nav .support a {
 }
 
 .containerHero .headerGif {
-  width: 348px;
+  width: 320px;
   height: 170px;
 }
 
@@ -217,9 +228,9 @@ nav .support a {
 }
 
 .containerHero header {
-  width: 300px;
+  width: 320px;
   height: 201px;
-  padding: 24px;
+  padding: 24px 0 0 24px;
 }
 
 header h1 {
@@ -236,7 +247,7 @@ header p {
   padding-top: 15px;
 }
 
-.dashboardHeader .headerBarChart {
+.dashboardHeader .firstDataBox {
   width: 400px;
   height: 225px;
   padding: 24px;
@@ -244,23 +255,25 @@ header p {
   background-color: white;
 }
 
-.headerBarChart .barChartContent {
+.firstDataBox .barChartContent {
   width: 350px;
   height: 140px;
   margin-top: 15px;
   background-color: black;
 }
 
-.dashboardContainer .dashboardDataBox {
+/* SECOND DATA BOX START */
+
+.dashboardContainer .dashboardSecondDataBox {
   display: inline-flex;
   align-items: center;
   margin-top: 25px;
-  gap: 35px;
+  gap: 25px;
   width: 100%;
   height: auto;
 }
 
-.dashboardDataBox .dataBox {
+.dashboardSecondDataBox .dataBox {
   display: inline-flex;
   width: 348px;
   height: 146px;
@@ -280,6 +293,16 @@ header p {
   width: 140px;
   height: 98px;
   background-color: yellow;
+}
+
+/* SECOND DATA BOX END */
+
+
+.dashboardThirdDataBox {
+  width: calc(100% - 31px);
+  height: 358px;
+  margin-top: 24px;
+  background-color: red;
 }
 
 /* DASHBOARD HEADER END */

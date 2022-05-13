@@ -6,9 +6,11 @@ import TheDashboard from './TheDashboardBody';
 function App() {
     return (
         <div className="app">
-            <TheNavigation/>
             <TheSearch/>
-            <TheDashboard/>
+            <div className="container">
+                <TheNavigation/>
+                <TheDashboard/>
+            </div>
         </div>
     );
 }

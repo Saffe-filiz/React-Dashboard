@@ -1,13 +1,7 @@
-import logo from '../Assets/Images/logo.png'
 
 function Navigation () {
 	return (
 	<div className="navigation">
-		<div className="logo">
-			<div className="image">
-				<img src={logo}/>
-			</div>
-		</div>
 		<nav>
 			<ul>
 				<li><a href="">Dashboard</a></li>
