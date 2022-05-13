@@ -302,7 +302,22 @@ header p {
   width: calc(100% - 31px);
   height: 358px;
   margin-top: 24px;
+  gap: 24px;
+  background-color: black;
+}
+
+.dashboardThirdDataBox .barChartContent {
+  width: 720px;
+  height: 358px;
+  padding: 24px;
   background-color: red;
+}
+
+.barChartContent .barChart {
+  width: 646px;
+  height: 268px;
+  margin: 20px 13px 0 13px;
+  background-color: black;
 }
 
 /* DASHBOARD HEADER END */

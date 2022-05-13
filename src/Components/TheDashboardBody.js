@@ -1,6 +1,7 @@
 import TheHeader from './TheHeader';
 import TheTinyBarChart from './TheTinyBarChart';
 import LineChart from './LineChart';
+import TheBarChart from './TheBarChart';
 
 
 
@@ -17,7 +18,7 @@ function Dashboard () {
 		    	<LineChart/>
 		    </section>
 		    <section className="dashboardThirdDataBox">
-		    	
+		    	<TheBarChart/>
 		    </section>
 		</div>
 	)
