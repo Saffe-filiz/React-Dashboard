@@ -247,7 +247,7 @@ header p {
   padding-top: 15px;
 }
 
-.dashboardHeader .firstDataBox {
+.dashboardHeader .tinyBarChart {
   width: 400px;
   height: 225px;
   padding: 24px;
@@ -255,7 +255,7 @@ header p {
   background-color: white;
 }
 
-.firstDataBox .barChartContent {
+.tinyBarChart .barChartContent {
   width: 350px;
   height: 140px;
   margin-top: 15px;
@@ -273,7 +273,7 @@ header p {
   height: auto;
 }
 
-.dashboardSecondDataBox .dataBox {
+.dashboardSecondDataBox .lineChart {
   display: inline-flex;
   width: 348px;
   height: 146px;
@@ -283,13 +283,13 @@ header p {
   background-color: white;
 }
 
-.dataBox .dataBoxCharTitle {
+.lineChart .dataBoxCharTitle {
   width: 152px;
   height: 98px;
   background-color: red;
 }
 
-.dataBox .dataBoxChar {
+.lineChart .dataBoxChar {
   width: 140px;
   height: 98px;
   background-color: yellow;

@@ -1,11 +1,11 @@
 
-function HeaderBarChart () {
+function TinyBarChart () {
 	return (
-		<div className="firstDataBox">
+		<div className="tinyBarChart">
 			<h1>Bar Chart</h1>
 			<div className="barChartContent"></div>
 		</div>
 	)
 }
 
-export default HeaderBarChart
+export default TinyBarChart

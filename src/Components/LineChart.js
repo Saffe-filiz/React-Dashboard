@@ -1,11 +1,11 @@
 
-function DataBox () {
+function LineChart () {
 	return (
-		<div className="dataBox">
+		<div className="lineChart">
 			<div className="dataBoxCharTitle"></div>
 			<div className="dataBoxChar"></div>
 		</div>
 	)
 }
 
-export default DataBox
+export default LineChart
