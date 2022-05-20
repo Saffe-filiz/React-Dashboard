@@ -210,8 +210,8 @@ nav .support a {
 
 .dashboardHeader .containerHero {
   display: inline-flex;
-  width: 670px;
-  height: 194px;
+  width: 720px;
+  height: 225px;
   padding: 12px;
   border-radius: var(--mainBorderRadius);
   background-color: #2BEBC8;
@@ -249,7 +249,7 @@ header p {
 }
 
 .dashboardHeader .tinyBarChartContent {
-  width: 400px;
+  width: 348px;
   height: 225px;
   padding: 24px;
   border-radius: var(--mainBorderRadius);
@@ -257,7 +257,7 @@ header p {
 }
 
 .tinyBarChartContent .tinyBarChart {
-  width: 350px;
+  width: 302px;
   height: 140px;
   margin-top: 15px;
 }

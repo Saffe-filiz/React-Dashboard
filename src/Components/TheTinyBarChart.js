@@ -1,10 +1,10 @@
 import React, { PureComponent } from 'react';
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, ResponsiveContainer } from 'recharts';
 
 const data = [
   {
     name: 'Page A',
-    uv: 4000,
+    uv: 1000,
     pv: 2400,
     amt: 2400,
   },
