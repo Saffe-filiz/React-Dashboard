@@ -289,10 +289,9 @@ header p {
   background-color: red;
 }
 
-.lineChartContent .ineChart {
+.lineChartContent .lineChart {
   width: 140px;
   height: 98px;
-  background-color: yellow;
 }
 
 /* SECOND DATA BOX END */
