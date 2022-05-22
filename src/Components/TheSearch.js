@@ -1,6 +1,6 @@
 import userAvatar from '../Assets/Images/userAvatar.png';
-import SearchIcon from '../Assets/Icons/TheSearchIcon.svg';
-import Notification from '../Assets/Icons/TheNotification.svg';
+import SearchIcon from '../Assets/Icons/SearchIcon.svg';
+import Notification from '../Assets/Icons/Notification.svg';
 import logo from '../Assets/Images/logo.png'
 
 
