@@ -1,11 +1,18 @@
-import { PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
+import ArrowUp from '../Assets/Icons/ArrowUp.svg';
 
 
 function PieCharts (props) {
 	return (
 		<div className="pieChartContent">
-			<h2>Test</h2>
+		    <div className="pieChartInfo">
+		        <h2>Title</h2>
+		    	<span className="chartSituation">
+					<img src={ArrowUp}/>
+					1.10% Since yesterday
+				</span>
+		    </div>
 			<div className="pieChart">
 			<ResponsiveContainer width="100%" height="100%">
 				<PieChart width={800} height={400}>

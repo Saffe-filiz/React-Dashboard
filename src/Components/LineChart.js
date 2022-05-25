@@ -1,6 +1,5 @@
-import { PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import { LineChart, Line, ResponsiveContainer } from 'recharts';
-
 import ArrowUp from '../Assets/Icons/ArrowUp.svg';
 
 

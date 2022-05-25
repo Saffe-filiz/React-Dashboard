@@ -1,4 +1,4 @@
-import { PureComponent, useState } from 'react';
+import React, { PureComponent, useState } from 'react';
 import { BarChart, Bar, CartesianGrid, ResponsiveContainer } from 'recharts';
 
 
