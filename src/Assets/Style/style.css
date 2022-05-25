@@ -24,8 +24,6 @@ body {
   background-color: #E5E5E5;
 }
 
-
-
 .app {
   position: relative;
   max-width: 1440px;
@@ -311,10 +309,50 @@ header p {
 }
 
 .lineChartContent .lineChartInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 152px;
   height: 98px;
-  background-color: red;
+  padding-bottom: 10px;
 }
+
+
+.lineChartInfo .lineChartInfoHeader {
+  width: 100%;
+  background-color: white;
+}
+
+.lineChartInfoHeader p, h4 {
+  font-family: var(--mainFontFamily);
+  color: var(--mainColor);
+}
+
+.lineChartInfoHeader p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.lineChartInfoHeader h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+.lineChartInfo .chartSituation {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  font-size: 12px;
+  font-family: var(--mainFontFamily);
+  font-weight: 400;
+  color: var(--mainColor);
+}
+
+.chartSituation img {
+  padding-right: 8px;
+}
+
 
 .lineChartContent .lineChart {
   width: 140px;
