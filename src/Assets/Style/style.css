@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;700&display=swap');
 
+:root {
+  --mainBorderRadius: 8px;
+  --mainColor: #000000;
+  --mainBackGroundColor: #ffffff;
+  --mainFontFamily: 'Mulish', sans-serif;
+}
+
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-size: 100%;
-  color:  #000000;
+  color: var(--mainColor);
   border: none;
   outline: none;
   text-decoration: none;
@@ -17,11 +24,7 @@ body {
   background-color: #E5E5E5;
 }
 
-:root {
-  --mainBorderRadius: 8px;
-  --mainBackGroundColor: #ffffff;
-  --mainFontFamily: 'Mulish', sans-serif;
-}
+
 
 .app {
   position: relative;
@@ -220,6 +223,7 @@ nav .support ul li {
   right: 0%;
   top: 70px;
   padding: 24px 0 0 24px;
+
 }
 
 .dashboardHeader {
@@ -293,6 +297,7 @@ header p {
   gap: 25px;
   width: 100%;
   height: auto;
+
 }
 
 .dashboardSecondDataBox .lineChartContent {
@@ -339,6 +344,7 @@ header p {
   width: 646px;
   height: 268px;
   margin: 20px 13px 0 13px;
+
 }
 
 /* DASHBOARD HEADER END */
@@ -359,4 +365,5 @@ header p {
   width: 285px;
   height: 272px;
   margin: 12px auto;
+
 }
