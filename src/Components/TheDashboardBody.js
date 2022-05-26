@@ -203,6 +203,10 @@ function Dashboard () {
                 <LineChart data={lineChartData[1]} stroke="#FFDF90"/>
                 <LineChart data={lineChartData[2]} stroke="#06AA8D"/>
             </section>
+            <section className="dashboardThirdDataBox">
+                <TheBarChart data={tinyBarChart}/>
+                <ThePieChart data={pieChartData.data} colors={pieChartData.colors}/>
+            </section>
 		</div>
 	)
 }
