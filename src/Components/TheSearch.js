@@ -11,7 +11,7 @@ function Search () {
 		    </div>
 			<div className="logo">
 			    <div className="image">
-				    <img src={logo}/>
+				    <img id="logoImage" src={logo}/>
 			    </div>
 		    </div>
 		    <div className="searchArea">
