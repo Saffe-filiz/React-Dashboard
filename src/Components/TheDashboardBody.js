@@ -196,17 +196,9 @@ function Dashboard () {
 		<div className="dashboardContainer">
 		    <section className="dashboardHeader">
 		    	<TheHeader/>
-		    	<TheTinyBarChart data={tinyBarChart}/>
+		    {/* <TheTinyBarChart data={tinyBarChart}/>*/}
 		    </section>
-		    <section className="dashboardSecondDataBox">
-		    	<LineChart data={lineChartData[0]} stroke="#FF7777"/>
-		    	<LineChart data={lineChartData[1]} stroke="#FFDF90"/>
-		    	<LineChart data={lineChartData[2]} stroke="#06AA8D"/>
-		    </section>
-		    <section className="dashboardThirdDataBox">
-		    	<TheBarChart data={tinyBarChart}/>
-		    	<ThePieChart data={pieChartData.data} colors={pieChartData.colors}/>
-		    </section>
+		  
 		</div>
 	)
 }

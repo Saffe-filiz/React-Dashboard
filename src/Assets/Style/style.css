@@ -44,6 +44,10 @@ body {
 
 }
 
+.navigation .searchArea {
+    display: none;
+}
+
 .navigation nav {
   width: 100%;
   height: 100%;
@@ -117,67 +121,83 @@ nav .support ul li {
   background-color: #ECECEC;
 }
 
+.search  .hamburger {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+}
+
 .logo .image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 104px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 104px;
 
 }
 
 .image img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 /* LOGO END */
 
-.search .searchArea {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%; 
-  padding: 0 45px 0 45px;
-  background-color: var(--mainBackGroundColor);
+
+/* SEARCH AREA START */
+
+.searchArea {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%; 
+    padding: 0 45px 0 45px;
+    background-color: var(--mainBackGroundColor);
 }
 
 
 .searchArea .searchInput {
-  display: flex;
-  align-items: center;
-  width: 225px;
-  height: 36px;
-  padding: 0 18px 0 18px;
-  border-radius: 54px;
-  box-sizing: content-box;
-  background-color: #ECECEC;
+    display: inline-flex;
+    align-items: center;
+    width: 225px;
+    height: 36px;
+    padding: 0 18px 0 18px;
+    border-radius: 54px;
+    box-sizing: content-box;
+    background-color: #ECECEC;
 }
 
 .searchArea .searchIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  margin-right: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    margin-right: 9px;
 }
 
 .searchInput input {
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
 }
+
+
+.searchArea .userContent {
+    display: inline-flex;
+    justify-content: space-between;
+    max-width: 228px;
+    width: 100%;
+    height: 40px;
+}
+
+/* SEARCH AREA END */
+
 
 /* USER CART START */
 
-.searchArea .userContent {
-  display: inline-flex;
-  justify-content: space-between;
-  width: 228px;
-  height: 40px;
-}
 
 .userContent .userCartNotificationsIcons {
   display: flex;
@@ -188,7 +208,8 @@ nav .support ul li {
   display:flex;
   align-items: center;
   justify-content: space-between;
-  width: 190px;
+  max-width: 190px;
+  width: 100%;
   height: 100%;
   border-left: 1px solid #ECECEC;
 }
@@ -215,29 +236,27 @@ nav .support ul li {
 /* DASHBOARD HEADER START */
 
 .dashboardContainer {
-  position: absolute;
-  max-width: calc(100% - 200px);
-  width: 100%;
-  height: auto;
-  right: 0%;
-  top: 70px;
-  padding: 24px 0 0 24px;
+    position: absolute;
+    width: calc(100% - 200px);
+    height: auto;
+    right: 0%;
+    top: 70px;
+    padding: 24px 0 0 24px;
 
 }
 
-.dashboardHeader {
-  display: inline-flex;
-  align-items: center;
-  gap: 25px;
-  width: 100%;
-  height: 225px;
+.dashboardContainer .dashboardHeader {
+    display: inline-flex;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+   
 }
 
 .dashboardHeader .containerHero {
   display: inline-flex;
   max-width: 720px;
   width: 100%;
-  height: 225px;
   padding: 12px;
   border-radius: var(--mainBorderRadius);
   background-color: #2BEBC8;
@@ -247,10 +266,10 @@ nav .support ul li {
   max-width: 320px;
   width: 100%;
   height: 170px;
+ 
 }
 
 .headerGif img {
-  max-width: 100%;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -259,7 +278,7 @@ nav .support ul li {
 .containerHero header {
   max-width: 320px;
   width: 100%;
-  height: 201px;
+  height: auto;
   padding: 24px 0 0 24px;
 }
 
@@ -429,22 +448,92 @@ header p {
 }
 
 .pieChartContent .pieChartInfo {
-  display: inline-flex;
-  justify-content: space-between;
-  width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .pieChartInfo .chartSituation {
-
-  font-size: 12px;
-  font-family: var(--mainFontFamily);
-  font-weight: 400;
-  color: var(--mainColor);
+    font-size: 12px;
+    font-family: var(--mainFontFamily);
+    font-weight: 400;
+    color: var(--mainColor);
 }
 
 .chartSituation img {
-  padding-right: 8px;
+    padding-right: 8px;
 }
 
 
 /* PIE CHART CONTENT END */
+
+
+@media only screen and (max-width: 1024px) {
+
+    .dashboardContainer  {
+        width: calc(100% - 50px);
+        gap: 0;
+        justify-content: center;
+        margin: 23px ;
+        padding: 0;
+    }
+
+    .dashboardContainer .containerHero  {
+        order: 1;
+        flex-direction: column;
+    }
+
+    .navigation {
+        position: relative;
+        width: 100%;
+        left: -100%;
+  
+    }
+
+    .containerHero header {
+        order: 2;
+        padding: 24px;
+    }
+
+    .navigation nav ul li {
+        height: 60px;
+        border: none;
+    }
+
+
+
+    .search {
+        justify-content: space-between;
+        width: 100%;
+        padding: 16px;
+        background-color: var(--mainBackGroundColor);
+    }
+
+    .search .logo {
+        margin: 0 auto;
+        background-color: var(--mainBackGroundColor);
+    }
+
+    .search .hamburger {
+        display: inline-block;
+    }
+
+    .search .searchArea {
+        width: auto;
+        padding: 0;
+    }
+
+    .search .searchInput, .search .searchArea .userContent .userCartNotificationsIcons, .search .searchArea .userContent .userCartUserName {
+        display: none;
+    }
+
+    .search .searchArea .userContent {
+        width: auto;
+    }
+
+    .search .searchArea .userContent .userCart {
+        height: 40px;
+        border: none;
+        width: auto;
+    }
+}

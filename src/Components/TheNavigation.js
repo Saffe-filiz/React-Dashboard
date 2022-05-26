@@ -4,11 +4,13 @@ import { ReactComponent as Account} from  '../Assets/Icons/Account.svg';
 import { ReactComponent as Setting} from '../Assets/Icons/Setting.svg';
 import { ReactComponent as Chat} from  '../Assets/Icons/Chat.svg';
 import { ReactComponent as FAQ} from  '../Assets/Icons/FAQ.svg';
+import SearchArea from './SearchArea';
 
 function Navigation () {
 	return (
 	<div className="navigation">
 		<nav>
+		<SearchArea/>  
 			<ul>
 				<li><Dashboard/> <a href="">Dashboard</a></li>
 				<li><Orders/><a href="">Ordars</a></li>
