@@ -478,8 +478,12 @@ header p {
         padding: 0;
     }
 
-    .dashboardContainer .containerHero  {
-        order: 1;
+    .dashboardContainer .dashboardHeader {
+        flex-direction: column;
+    }
+
+
+    .dashboardHeader .containerHero  {
         flex-direction: column;
     }
 
@@ -499,7 +503,6 @@ header p {
         height: 60px;
         border: none;
     }
-
 
 
     .search {
@@ -535,5 +538,9 @@ header p {
         height: 40px;
         border: none;
         width: auto;
+    }
+
+    .dashboardSecondDataBox {
+        flex-direction: column;
     }
 }
