@@ -3,7 +3,7 @@ import SearchIcon from '../Assets/Icons/SearchIcon.svg';
 function SearchArea () {
 	return (
 		<label htmlFor="search">
-	        <div className="searchInput">
+	        <div  className="searchInput">
 	            <span className="searchIcon">
 			        <img src={SearchIcon}/>
 			    </span>

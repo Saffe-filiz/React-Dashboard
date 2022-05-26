@@ -4,9 +4,15 @@ import { ReactComponent as Account} from  '../Assets/Icons/Account.svg';
 import { ReactComponent as Setting} from '../Assets/Icons/Setting.svg';
 import { ReactComponent as Chat} from  '../Assets/Icons/Chat.svg';
 import { ReactComponent as FAQ} from  '../Assets/Icons/FAQ.svg';
+import { useState } from 'react';
 import SearchArea from './SearchArea';
 
 function Navigation () {
+
+	let [currentMode, setCurrentMode] = useState('Dark Mode');
+
+	const chanceTeam = () => currentMode == 'Dark Mode' ? setCurrentMode('Light Mode'): setCurrentMode('Dark Mode');
+
 	return (
 	<div className="navigation">
 		<nav>
@@ -24,6 +30,9 @@ function Navigation () {
 				    <li><FAQ/><a href="">FAQ</a></li>
 				</ul>
 			</div>
+			<div className="darkModeButton">
+			    <button onClick={chanceTeam}>{currentMode}</button>
+		    </div>
 		</nav>
 	</div>
 	)
