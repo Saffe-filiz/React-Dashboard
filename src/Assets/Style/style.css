@@ -121,11 +121,49 @@ nav .support ul li {
   background-color: #ECECEC;
 }
 
-.search  .hamburger {
+.search  .hamburgerMenu {
     display: none;
     width: 40px;
     height: 40px;
-    background-color: red;
+}
+
+.hamburgerMenu .hamburger { 
+    position: relative;
+    width: 90%;
+    height: 3px;
+    background-color: #262626;
+}
+
+.hamburger:before, .hamburger:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    transition: 300ms all;
+    background-color: #262626;
+}
+
+.hamburger:before {
+    transform: translateY(10px);
+}
+
+.hamburger:after {
+    transform: translateY(-10px);
+}
+
+
+.hamburgerMenu:hover .hamburger {
+    background-color: transparent;
+}
+
+.hamburgerMenu:hover .hamburger:before {
+    top: 0;
+    transform: rotate(45deg)
+}
+
+.hamburgerMenu:hover .hamburger:after {
+    top: 0;
+    transform: rotate(-45deg)
 }
 
 .logo .image {
@@ -322,7 +360,7 @@ header p {
 /* SECOND DATA BOX START */
 
 .dashboardContainer .dashboardSecondDataBox {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   margin-top: 25px;
   gap: 25px;
@@ -401,7 +439,7 @@ header p {
 
 
 .dashboardThirdDataBox {
-  display: inline-flex;
+  display: flex;
   width: 100%;
   height: auto;
   margin-top: 24px;
@@ -471,11 +509,16 @@ header p {
 
 @media only screen and (max-width: 1024px) {
 
+    .container {
+
+        width: 348px;
+    }
+
     .dashboardContainer  {
         width: calc(100% - 50px);
         gap: 0;
         justify-content: center;
-        margin: 23px ;
+        margin: 23px;
         padding: 0;
     }
 
@@ -485,6 +528,7 @@ header p {
 
 
     .dashboardHeader .containerHero  {
+        max-width: 348px;
         flex-direction: column;
     }
 
@@ -518,8 +562,10 @@ header p {
         background-color: var(--mainBackGroundColor);
     }
 
-    .search .hamburger {
-        display: inline-block;
+    .search .hamburgerMenu {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .search .searchArea {
@@ -536,22 +582,18 @@ header p {
     }
 
     .search .searchArea .userContent .userCart {
+        max-width: 348px;
         height: 40px;
         border: none;
         width: auto;
     }
 
-    .dashboardSecondDataBox {
+    .dashboardSecondDataBox, .dashboardThirdDataBox {
+
+        margin: 23px auto;
         justify-content: center;
-        gap: 0;
         flex-direction: column;
     }
 
-    .dashboardThirdDataBox {
-        justify-content: center;
-        
-      
-        flex-direction: column;
-    }
 
 }
