@@ -47,7 +47,6 @@ function Navigation () {
 	return (
 	<div className="navigation">
 		<nav>
-		<SearchArea/>  
 			<ul>
 				<li><Dashboard/><a href="">Dashboard</a></li>
 				<li><Orders/><a href="">Ordars</a></li>

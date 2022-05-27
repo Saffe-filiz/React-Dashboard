@@ -40,6 +40,7 @@ body {
 /* NAVIGATION START */
 
 .app .container {
+  position: relative;
   width: 100%;
   height: auto;
 } 
@@ -172,20 +173,21 @@ nav .support ul li {
 
 /* HAMBURGER MENU START */
 
-.search  .hamburgerMenu {
+.search .hamburgerMenu {
     display: none;
     width: 40px;
     height: 40px;
 }
 
-.hamburgerMenu .hamburger { 
+.hamburgerMenu .hamburger, .hamburgerMenu .hamburgerAvtive { 
     position: relative;
     width: 90%;
     height: 3px;
     background-color: #262626;
 }
 
-.hamburger:before, .hamburger:after {
+
+.hamburger:before, .hamburger:after, .hamburgerAvtive:before, .hamburgerAvtive:after {
     position: absolute;
     content: '';
     width: 100%;
@@ -194,27 +196,30 @@ nav .support ul li {
     background-color: #262626;
 }
 
-.hamburger:before {
+.hamburger:before, .hamburgerAvtive:before {
     transform: translateY(10px);
 }
 
-.hamburger:after {
+.hamburger:after, .hamburgerAvtive:after {
     transform: translateY(-10px);
 }
 
-.hamburgerMenu:hover .hamburger {
+
+.hamburgerMenu .hamburgerAvtive {
     background-color: transparent;
 }
 
-.hamburgerMenu:hover .hamburger:before {
+.hamburgerMenu .hamburgerAvtive:before {
     top: 0;
     transform: rotate(45deg)
 }
 
-.hamburgerMenu:hover .hamburger:after {
+.hamburgerMenu .hamburgerAvtive:after {
     top: 0;
     transform: rotate(-45deg)
 }
+
+
 
 /* HAMBURGER MENU END */
 
@@ -571,10 +576,18 @@ header p {
     }
 
     .navigation {
-        position: relative;
+        position: absolute;
+        z-index: 20;
         width: 100%;
+        height: 100vh;
         left: -100%;
+        top: 0;
+        transition: 300ms all;
   
+    }
+
+    .navigation .darkModeButton {
+        bottom: 100px;
     }
 
     .containerHero header {
