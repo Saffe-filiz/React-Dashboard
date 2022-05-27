@@ -2,16 +2,17 @@
 
 :root {
   --mainBorderRadius: 8px;
-  --mainFontColor: #000000;
-  --navigationColor: #000000;
-  --borderColor: #ffffff;
-  --mainBackGroundColor: #ffffff;
-  --headerBackGroundColor: #2BEBC8;
-  --navigationBackGroundColor: #ffffff;
-  --logoBackGroundColor: #F5F5F5;
-  --searchBackGroundColor: #ECECEC;
-  --mainFontFamily: 'Mulish', sans-serif;
-  --backGroundColor: #F5F5F5;
+    --mainFontColor: #000000;
+    --navFontColor: #000000;
+    --borderColor: #ffffff;
+    --mainContentBG: #ffffff;
+    --headerBG: #2BEBC8;
+    --logoBG: #F5F5F5;
+    --searchBG: #ECECEC;
+    --mainFontFamily: 'Mulish', sans-serif;
+    --bodyBG: #F5F5F5;
+
+  --navBG: #ffffff;
 }
 
 
@@ -28,7 +29,7 @@
 }
 
 body {
-  background-color: var(--backGroundColor);
+  background-color: var(--bodyBG);
 }
 
 .app {
@@ -57,7 +58,7 @@ body {
     position:relative;
     width: 100%;
     height: 100%;
-    background-color: var(--navigationBackGroundColor);
+    background-color: var(--navBG);
 }
 
 nav .darkModeButton {
@@ -75,7 +76,7 @@ nav .darkModeButton {
     border: 1px solid black;
     border-radius: 8px;
     cursor: pointer;
-    background-color: var(--mainBackGroundColor);
+    background-color: var(--mainContentBG);
 }
 
 
@@ -94,11 +95,11 @@ nav ul li {
 
 nav ul li a {
   padding-left: 12px;
-  color: var(--navigationColor);
+  color: var(--navFontColor);
 }
 
 nav ul li svg {
-    fill: var(--navigationColor);
+    fill: var(--navFontColor);
 }
 
 nav ul li:hover svg,  nav ul li a {
@@ -149,7 +150,7 @@ nav .support ul li {
     justify-content: center;
     width: 238px;
     height: 100%;
-    background-color: var(--logoBackGroundColor);
+    background-color: var(--logoBG);
 }
 
 
@@ -231,7 +232,7 @@ nav .support ul li {
     width: 100%;
     height: 100%; 
     padding: 0 45px 0 45px;
-    background-color: var(--navigationBackGroundColor);
+    background-color: var(--navBG);
 }
 
 
@@ -244,7 +245,7 @@ nav .support ul li {
     border-radius: 54px;
     box-sizing: content-box;
     border: 1px solid var(--borderColor);
-    background-color: var(--searchBackGroundColor);
+    background-color: var(--searchBG);
 }
 
 .searchArea .searchIcon {
@@ -333,18 +334,19 @@ nav .support ul li {
 
 .dashboardHeader .containerHero {
     display: inline-flex;
+    justify-content: space-between;
     max-width: 720px;
     width: 100%;
     min-height: 225px;
     padding: 12px;
     border-radius: var(--mainBorderRadius);
-    background-color: var(--headerBackGroundColor);
+    background-color: var(--headerBG);
 }
 
 .containerHero .headerGif {
     max-width: 320px;
     width: 100%;
-    height: 170px;
+    height: 201px;
  
 }
 
@@ -387,7 +389,7 @@ header p {
   height: 225px;
   padding: 24px;
   border-radius: var(--mainBorderRadius);
-  background-color: var(--mainBackGroundColor);
+  background-color: var(--mainContentBG);
 }
 
 .tinyBarChartContent .tinyBarChart {
@@ -421,7 +423,7 @@ header p {
   gap: 8px;
   padding: 24px 24px 0 24px ;
   border-radius: var(--mainBorderRadius);
-  background-color: var(--mainBackGroundColor);
+  background-color: var(--mainContentBG);
 }
 
 .lineChartContent .lineChartInfo {
@@ -495,7 +497,7 @@ header p {
   height: 358px;
   padding: 24px;
   border-radius: var(--mainBorderRadius);
-  background-color: var(--mainBackGroundColor);
+  background-color: var(--mainContentBG);
 }
 
 .barChartContent .barChart {
@@ -517,7 +519,7 @@ header p {
   height: auto;
   padding: 24px;
   border-radius: var(--mainBorderRadius);
-  background-color: var(--mainBackGroundColor);
+  background-color: var(--mainContentBG);
 }
 
 .pieChartContent .pieChart {
@@ -537,7 +539,7 @@ header p {
     font-size: 12px;
     font-family: var(--mainFontFamily);
     font-weight: 400;
-    color: var(--mainColor);
+    color: var(--mainFontColor);
 }
 
 .chartSituation img {
@@ -551,7 +553,7 @@ header p {
 @media only screen and (max-width: 1024px) {
 
     .container {
-          position: relative;
+        position: relative;
         width: 348px;
     }
 
@@ -603,12 +605,12 @@ header p {
         justify-content: space-between;
         width: 100%;
         padding: 16px;
-        background-color: var(--mainBackGroundColor);
+        background-color: var(--mainContentBG);
     }
 
     .search .logo {
         margin: 0 auto;
-        background-color: var(--mainBackGroundColor);
+        background-color: var(--mainContentBG);
     }
 
     .search .hamburgerMenu {

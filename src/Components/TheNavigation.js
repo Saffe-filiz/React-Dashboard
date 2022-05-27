@@ -15,30 +15,19 @@ function Navigation () {
 	const setTheme = () => {
 		let item = document.documentElement.style;
 		let logo = document.querySelector('#logoImage');
-		let names = ['--searchBackGroundColor', '--navigationBackGroundColor', '--mainBackGroundColor', '--headerBackGroundColor', '--logoBackGroundColor']
+		let gif = document.querySelector('#headerGif');
+		let names = ['--searchBG', '--navBG', '--mainContentBG', '--headerBG', '--logoBG', '--bodyBG', '--mainFontColor', '--borderColor', '--navFontColor'];
+		let darkThemeColors = ['transparent', '#151718', '#0D0C0F', '#0D0C0F', '#0D0C0F', '#1E1F23', '#ffffff', '#B5B7B9', '#B5B7B9'];
+		let LightThemeColors = ['#ECECEC', '#ffffff', '#ffffff', '#2BEBC8', '#ECECEC', '#F5F5F5', '#000000', '#ffffff', '#000000'];
+		
 		if(currentTheme == 'Dark Mode'){
-		    item.setProperty('--searchBackGroundColor', 'transparent');
-		    item.setProperty('--navigationBackGroundColor', '#151718');
-		    item.setProperty('--mainBackGroundColor', '#0D0C0F');
-		    item.setProperty('--headerBackGroundColor', '#0D0C0F');
-		    item.setProperty('--logoBackGroundColor', '#0D0C0F');
-		    item.setProperty('--backGroundColor', '#1E1F23');
-		    item.setProperty('--mainFontColor', '#ffffff');
-		    item.setProperty('--borderColor', '#B5B7B9');
-		    item.setProperty('--navigationColor', '#B5B7B9');
+		    names.map( (name, index) => item.setProperty(name, darkThemeColors[index]))
 		    logo.src =  require('../Assets/Images/logoDarkMode.png');
-		    
+		    gif.src = require('../Assets/Images/headerGifDarkMode.gif');
 		}else {
-			item.setProperty('--mainBackGroundColor', '#ffffff');
-			item.setProperty('--headerBackGroundColor', '#2BEBC8');
-			item.setProperty('--navigationBackGroundColor', '#ffffff');
-			item.setProperty('--logoBackGroundColor', '#ECECEC');
-			item.setProperty('--searchBackGroundColor', '#ECECEC');
-			item.setProperty('--backGroundColor', '#F5F5F5')
-			item.setProperty('--mainFontColor', '#000000');
-			item.setProperty('--borderColor', '#ffffff');
-			item.setProperty('--navigationColor', '#000000')
+			names.map( (name, index) => item.setProperty(name, LightThemeColors[index]))
 			logo.src =  require('../Assets/Images/logo.png');
+			gif.src = require('../Assets/Images/headerGif.gif');
 		}
 
 	}

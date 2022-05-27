@@ -1,4 +1,3 @@
-import Gif from '../Assets/Images/headerGif.gif'
 
 function Header () {
 	return(
@@ -8,7 +7,7 @@ function Header () {
 		        <p>Try our new Admin Dashboard Template, build with live Ant-Design components. Customize it to your needs and release to production!</p> 	
 		    </header>
 			<div className="headerGif">
-				<img src={Gif}/>
+				<img src="" id="headerGif"/>
 			</div>
 		</div>
 	)
