@@ -40,9 +40,7 @@ body {
 /* NAVIGATION START */
 
 .app .container {
-  position: relative;
   width: 100%;
-  height: auto;
 } 
 
 .navigation {
@@ -553,7 +551,7 @@ header p {
 @media only screen and (max-width: 1024px) {
 
     .container {
-
+          position: relative;
         width: 348px;
     }
 
