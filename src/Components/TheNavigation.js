@@ -5,38 +5,37 @@ import { ReactComponent as Setting} from '../Assets/Icons/Setting.svg';
 import { ReactComponent as Chat} from  '../Assets/Icons/Chat.svg';
 import { ReactComponent as FAQ} from  '../Assets/Icons/FAQ.svg';
 
-import { useState } from 'react';
+import { useState, useLayoutEffect } from 'react';
 import SearchArea from './SearchArea';
 
 function Navigation () {
 
-	let [currentMode, setCurrentMode] = useState('Dark Mode');
+	let [currentTheme, setCurrentTheme] = useState('');
 
-	const chanceTeam = () => {
+	const setTheme = () => {
 		let item = document.documentElement.style;
 		let logo = document.querySelector('#logoImage');
-		if(currentMode == 'Dark Mode'){
-			setCurrentMode('Light Mode');
+		let names = ['--searchBackGroundColor', '--navigationBackGroundColor', '--mainBackGroundColor', '--headerBackGroundColor', '--logoBackGroundColor']
+		if(currentTheme == 'Dark Mode'){
 		    item.setProperty('--searchBackGroundColor', 'transparent');
 		    item.setProperty('--navigationBackGroundColor', '#151718');
 		    item.setProperty('--mainBackGroundColor', '#0D0C0F');
 		    item.setProperty('--headerBackGroundColor', '#0D0C0F');
 		    item.setProperty('--logoBackGroundColor', '#0D0C0F');
 		    item.setProperty('--backGroundColor', '#1E1F23');
-		    item.setProperty('--mainColor', '#ffffff');
+		    item.setProperty('--mainFontColor', '#ffffff');
 		    item.setProperty('--borderColor', '#B5B7B9');
 		    item.setProperty('--navigationColor', '#B5B7B9');
 		    logo.src =  require('../Assets/Images/logoDarkMode.png');
 		    
 		}else {
-			setCurrentMode('Dark Mode');
 			item.setProperty('--mainBackGroundColor', '#ffffff');
 			item.setProperty('--headerBackGroundColor', '#2BEBC8');
 			item.setProperty('--navigationBackGroundColor', '#ffffff');
 			item.setProperty('--logoBackGroundColor', '#ECECEC');
 			item.setProperty('--searchBackGroundColor', '#ECECEC');
 			item.setProperty('--backGroundColor', '#F5F5F5')
-			item.setProperty('--mainColor', '#000000');
+			item.setProperty('--mainFontColor', '#000000');
 			item.setProperty('--borderColor', '#ffffff');
 			item.setProperty('--navigationColor', '#000000')
 			logo.src =  require('../Assets/Images/logo.png');
@@ -44,6 +43,25 @@ function Navigation () {
 
 	}
 
+	const chanceTheme = () => {
+		if(currentTheme == 'Dark Mode'){
+			localStorage.setItem("Theme", "Light Mode")
+			setCurrentTheme("Light Mode")
+			setTheme()
+			
+		}else {
+			localStorage.setItem("Theme", "Dark Mode")
+			setCurrentTheme("Dark Mode")
+			setTheme()
+		}
+	}
+
+	useLayoutEffect(() => {
+		setCurrentTheme(localStorage.getItem("Theme"))
+		setTheme()
+	})
+
+   
 	return (
 	<div className="navigation">
 		<nav>
@@ -61,7 +79,7 @@ function Navigation () {
 				</ul>
 			</div>
 			<div className="darkModeButton">
-			    <button onClick={chanceTeam}>{currentMode}</button>
+			    <button onClick={chanceTheme}>{currentTheme}</button>
 		    </div>
 		</nav>
 	</div>

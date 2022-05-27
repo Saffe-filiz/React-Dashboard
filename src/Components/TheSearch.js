@@ -8,24 +8,25 @@ import { useState } from 'react'
 
 function Search () {
 
-	const [ checkbox, setCheckbox] = useState(false)
+	const [isAvtive, setIsAvtive] = useState(false)
 	const [activeClass, setActiveClass] = useState('hamburger')
 
 	const hamburgerAnimation = () => {
 		let body = document.querySelector('body');
 		let navigation = document.querySelector('.navigation');
-		if(checkbox){
-			setCheckbox(false)
+		if(isAvtive){
+			setIsAvtive(false)
 			setActiveClass('hamburger')
 			navigation.style.left = '-100%'
 			body.style.overflow = 'auto'
 		}else {
-			setCheckbox(true)
+			setIsAvtive(true)
 			setActiveClass('hamburgerAvtive')
 			navigation.style.left = '0%';
 			body.style.overflow = 'hidden'
 		}
 	}
+
 	return (
 		<div className="search">
 		    <div className="hamburgerMenu" onClick={hamburgerAnimation}>

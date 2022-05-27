@@ -2,7 +2,7 @@
 
 :root {
   --mainBorderRadius: 8px;
-  --mainColor: #000000;
+  --mainFontColor: #000000;
   --navigationColor: #000000;
   --borderColor: #ffffff;
   --mainBackGroundColor: #ffffff;
@@ -20,7 +20,7 @@
   margin: 0;
   box-sizing: border-box;
   font-size: 100%;
-  color: var(--mainColor);
+  color: var(--mainFontColor);
   border: none;
   outline: none;
   text-decoration: none;
@@ -440,7 +440,7 @@ header p {
 
 .lineChartInfoHeader p, h4 {
   font-family: var(--mainFontFamily);
-  color: var(--mainColor);
+  color: var(--mainFontColor);
 }
 
 .lineChartInfoHeader p {
@@ -461,7 +461,7 @@ header p {
   font-size: 12px;
   font-family: var(--mainFontFamily);
   font-weight: 400;
-  color: var(--mainColor);
+  color: var(--mainFontColor);
 }
 
 .chartSituation img {
