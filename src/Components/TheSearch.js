@@ -18,7 +18,7 @@ function Search () {
 			setIsAvtive(false)
 			setActiveClass('hamburger')
 			navigation.style.left = '-100%'
-			body.style.overflow = 'auto'
+		    body.style.overflow = 'auto'
 		}else {
 			setIsAvtive(true)
 			setActiveClass('hamburgerAvtive')
