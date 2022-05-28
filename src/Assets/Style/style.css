@@ -34,7 +34,6 @@ body {
 
 .app {
   position: relative;
-  max-width: 1440px;
   width: 100%;
 }
 
@@ -45,8 +44,9 @@ body {
 } 
 
 .navigation {
+    display: inline-block;
     width: 200px;
-    height: 827px;
+    height: initial;
 
 }
 
@@ -135,11 +135,18 @@ nav .support ul li {
 
 /* SEARCH START */
 
-.search {
+.searchContainer {
+    width: 100%;
+    background-color: var(--navBG);
+}
+
+.searchContainer .search {
     display: flex;
     align-items: center;
+    max-width: 1440px;
     width: 100%;
     height: 70px;
+    margin: 0 auto;
 } 
 
 /* LOGO START */
@@ -280,8 +287,8 @@ nav .support ul li {
 
 
 .userContent .userCartNotificationsIcons {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .userContent .userCart {
@@ -315,12 +322,16 @@ nav .support ul li {
 
 /* DASHBOARD HEADER START */
 
-.dashboardContainer {
-    position: absolute;
-    width: calc(100% - 200px);
-    right: 0%;
-    top: 70px;
+.dashboard {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.dashboard .dashboardContainer {
+    max-width: 1440px;
     padding: 24px 0 0 24px;
+    margin: 0 auto;
 
 }
 

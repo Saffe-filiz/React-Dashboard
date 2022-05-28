@@ -1,5 +1,4 @@
 import '../Assets/Style/style.css';
-import TheNavigation from './TheNavigation';
 import TheSearch from './TheSearch';
 import TheDashboard from './TheDashboardBody';
 
@@ -8,7 +7,7 @@ function App() {
         <div className="app">
             <TheSearch/>
             <div className="container">
-                <TheNavigation/>
+                
                 <TheDashboard/>
             </div>
         </div>

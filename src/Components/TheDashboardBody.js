@@ -3,6 +3,7 @@ import TheTinyBarChart from './TheTinyBarChart';
 import LineChart from './LineChart';
 import TheBarChart from './TheBarChart';
 import ThePieChart from './ThePieChart';
+import TheNavigation from './TheNavigation';
 
 
 const lineChartData = [
@@ -193,12 +194,14 @@ const tinyBarChart = [
 
 function Dashboard () {
 	return (
-		<div className="dashboardContainer">
-		    <section className="dashboardHeader">
-		    	<TheHeader/>
-		      <TheTinyBarChart data={tinyBarChart}/>
-		    </section>
-		    <section className="dashboardSecondDataBox">
+        <div className="dashboard">
+            <TheNavigation/>
+        <div className="dashboardContainer">
+            <section className="dashboardHeader">
+                <TheHeader/>
+              <TheTinyBarChart data={tinyBarChart}/>
+            </section>
+            <section className="dashboardSecondDataBox">
                 <LineChart data={lineChartData[0]} stroke="#FF7777"/>
                 <LineChart data={lineChartData[1]} stroke="#FFDF90"/>
                 <LineChart data={lineChartData[2]} stroke="#06AA8D"/>
@@ -206,8 +209,9 @@ function Dashboard () {
             <section className="dashboardThirdDataBox">
                 <TheBarChart data={tinyBarChart}/>
                 <ThePieChart data={pieChartData.data} colors={pieChartData.colors}/>
-            </section>
-		</div>
+           </section>
+        </div>
+        </div>
 	)
 }
 

@@ -28,19 +28,21 @@ function Search () {
 	}
 
 	return (
-		<div className="search">
-		    <div className="hamburgerMenu" onClick={hamburgerAnimation}>
-		    	<div className={activeClass}></div>
-		    </div>
-			<div className="logo">
-			    <div className="image">
-				    <img id="logoImage" src={logo}/>
+		<div className="searchContainer">
+			<div className="search">
+		        <div className="hamburgerMenu" onClick={hamburgerAnimation}>
+		    	    <div className={activeClass}></div>
+		        </div>
+			    <div className="logo">
+			        <div className="image">
+				        <img id="logoImage" src={logo}/>
+			        </div>
+		        </div>
+		        <div className="searchArea">
+		            <SearchArea/>  
+		            <TheUserCart/>
 			    </div>
-		    </div>
-		    <div className="searchArea">
-		        <SearchArea/>  
-		        <TheUserCart/>
-			</div>
+		   </div>
 		</div>
 	);
 }
